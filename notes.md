@@ -111,7 +111,44 @@ id      title      year     language        run_time
 ```
 
 `http_request for adding new movie`
+
+```
+url: localhost:9000/movies/
+method:POST
+body:{
+    "title":"BKU"
+    "year":2026
+    "language":"malayalam"
+    "run_time":172
+}
+```
 `http_request for list all movie`
+
+```
+url: localhost:9000/movies/
+method:GET
+```
 `http_request for fetching movie detail`
+
+```
+url: localhost:9000/movies/2
+method:GEt
+```
 `http_request for update movie`
+
+```
+url: localhost:9000/movies/2
+method:PUT
+body:{
+    "title":"king"
+    "year":2020
+    "language":"hindi"
+    "run_time":165
+}
+```
 `http_request for delete movie`
+
+```
+url: localhost:9000/movies/5
+method:DELEtE
+```
