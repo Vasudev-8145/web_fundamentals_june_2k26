@@ -152,3 +152,62 @@ body:{
 url: localhost:9000/movies/5
 method:DELEtE
 ```
+
+
+### hospital task
+
+```
+Patient
+
+id      name      age     token_number        status
+
+
+1        ajna      40      5                    waiting
+2        moosa     20      8                    waiting
+3        sooraj    21      1                    completed
+4        sourav    50      4                    in progress
+5        ajay      22      9                    waiting
+```
+
+`http_request for adding a new patient`
+
+```
+url: localhost:7000/patient/
+method:POST
+body:{
+    "name":"anjali"
+    "age":30
+    "token_number":"7"
+    "status":waiting
+}
+```
+`http_request for list all patients`
+
+```
+url: localhost:7000/patient/
+method:GET
+```
+`http_request for fetching patient detail`
+
+```
+url: localhost:7000/patient/2
+method:GET
+```
+`http_request for update patient detail`
+
+```
+url: localhost:7000/patient/2
+method:PUT
+body:{
+    "name":"moosa"
+    "age":25
+    "token_number":2
+    "status":"completed"
+}
+```
+`http_request for delete patient`
+
+```
+url: localhost:7000/patient/2
+method:DELETE
+```
